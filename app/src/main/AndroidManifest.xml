@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.codans.paopaoxia.app">
+
+    <uses-sdk android:minSdkVersion="1.2 " />
+
+    <code class="code">
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+        <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    </code>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    //地图包、搜索包需要的基础权限
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    //定位包、导航包需要的额外权限（注：基础权限也需要）
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:name=".MyApplications"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_96a"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="91df25936797976208d633ca21efad50" />
+
+        <activity android:name="com.codans.paopaoxia.activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.amap.api.location.APSService"
+            android:exported="true">
+
+        </service>
+
+
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="me.nereo.multi_image_selector.MultiImageSelectorActivity" />
+
+        <activity android:name="com.codans.paopaoxia.wxapi.WXEntryActivity"
+            android:label="@string/app_name"
+            android:exported="true">
+
+        </activity>
+
+        <activity android:name="com.codans.paopaoxia.module.Assist.BigImageActivity">
+
+        </activity>
+
+        <activity android:name="com.codans.paopaoxia.activity.WelcomeActivity">
+
+        </activity>
+        <activity android:name="com.codans.paopaoxia.module.bubbling.CustomIconActivity">
+
+        </activity>
+        <activity android:name="com.codans.paopaoxia.module.bubbling.SendBubbleActivity" android:windowSoftInputMode="adjustPan|stateHidden">
+
+        </activity>
+        <activity android:name="com.codans.paopaoxia.module.loginregistration.SetUserInfoActivity">
+
+        </activity>
+        <activity android:name="com.codans.paopaoxia.module.loginregistration.WeixinLoginActivity">
+
+        </activity>
+        <activity android:name="com.codans.paopaoxia.module.loginregistration.StatementActivity">
+
+        </activity>
+        <activity android:name="com.codans.paopaoxia.module.homepage.ReleaseBubbleActivity">
+
+        </activity>
+        <activity android:name="com.codans.paopaoxia.module.varietyshop.DealActivity">
+
+        </activity>
+        <activity android:name="com.codans.paopaoxia.module.varietyshop.ReleaseVerietyActivity">
+
+        </activity>
+        <activity android:name="com.codans.paopaoxia.module.particulars.VerietyParticular">
+
+        </activity>
+        <activity android:name="com.codans.paopaoxia.module.personalcenter.MyVerietyShop">
+
+        </activity>
+        <activity android:name="com.codans.paopaoxia.module.varietyshop.VerietyListActivity">
+
+        </activity>
+        <activity android:name="com.codans.paopaoxia.module.loginregistration.RegisterActivity">
+
+        </activity>
+        <activity android:name="com.codans.paopaoxia.module.loginregistration.LoginActivity">
+
+        </activity>
+        <activity android:name="com.codans.paopaoxia.module.message.MessageActivity">
+
+        </activity>
+        <activity android:name="com.codans.paopaoxia.module.message.MessageListActivity">
+
+        </activity>
+        <activity android:name="com.codans.paopaoxia.module.assignment.SignInActivity">
+
+        </activity>
+        <activity android:name="com.codans.paopaoxia.module.through.ThroughActivity">
+
+        </activity>
+        <activity android:name="com.codans.paopaoxia.module.personalcenter.HotMapActivity" android:launchMode="singleTask">
+
+        </activity>
+        <activity android:name="com.codans.paopaoxia.module.particulars.UserInfoActivity"></activity>
+        <activity android:name="com.codans.paopaoxia.module.particulars.CommentActivity"></activity>
+        <activity android:name="com.codans.paopaoxia.module.particulars.ChangeIconActivity"></activity>
+        <activity android:name="com.codans.paopaoxia.module.particulars.BubbleParticularsActivity"></activity>
+        <activity android:name="com.codans.paopaoxia.module.homepage.RedactBubbleActivity"></activity>
+        <activity android:name="com.codans.paopaoxia.module.homepage.MoreSettingActivity"></activity>
+        <activity android:name="com.codans.paopaoxia.activity.AboutActivity"></activity>
+        <activity android:name="com.codans.paopaoxia.activity.SuggestActivity"></activity>
+        <activity android:name="com.codans.paopaoxia.module.assignment.TaskActivity"></activity>
+        <activity android:name="com.codans.paopaoxia.module.bubbling.BubblingActivity"></activity>
+        <activity android:name="com.codans.paopaoxia.module.information.InformationActivity"></activity>
+        <activity android:name="com.codans.paopaoxia.module.personalcenter.AttentionActivity"></activity>
+        <activity android:name="com.codans.paopaoxia.module.personalcenter.MyBubbleActivity"></activity>
+        <activity android:name="com.codans.paopaoxia.module.bubbling.SendBubbleSetting"></activity>
+        <activity android:name="com.codans.paopaoxia.module.personalcenter.ParticipationActivity"></activity>
+        <activity android:name="com.codans.paopaoxia.module.personalcenter.MyFootPrintActivity"></activity>
+        <activity android:name="com.codans.paopaoxia.module.personalcenter.PersonalCenterActivity"></activity>
+        <activity android:name="com.codans.paopaoxia.module.personalcenter.UserActivity"></activity>
+        <activity android:name="com.codans.paopaoxia.module.systemsettings.SystemSetingActivity"></activity>
+        <activity android:name="com.codans.paopaoxia.module.homepage.HomepageActivity"></activity>
+
+    </application>
+
+</manifest>
