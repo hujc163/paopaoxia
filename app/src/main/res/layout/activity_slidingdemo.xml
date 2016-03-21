@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="任务"
+        android:onClick="Click"
+        android:id="@+id/renwu" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="情报"
+        android:onClick="Click"
+        android:id="@+id/qingbao" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="穿越"
+        android:onClick="Click"
+        android:id="@+id/chuanyue" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="冒泡"
+        android:onClick="Click"
+        android:id="@+id/maopao" />
+</LinearLayout>

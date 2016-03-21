@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">泡泡侠</string>
+
+    <string-array name="layers_array">
+        <item>normal</item>
+        <item>satellite</item>
+    </string-array>
+</resources>

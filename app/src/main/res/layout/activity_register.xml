@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EEEEEE">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/btn_register_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="取消"
+            android:background="@color/white"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"/>
+
+        <Button
+            android:id="@+id/btn_register_next2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:onClick="onClick"
+            android:text="下一步"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightgray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/ll_shape_yanzhenrim">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/icon_mobile3x"/>
+            <EditText
+                android:id="@+id/et_register_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="手机号码"
+                android:background="@drawable/et_shape"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_register_getauthcode"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="#f6f6f6"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:text="获取验证码"
+            android:onClick="onClick"
+            android:textColor="@color/blue"/>
+        <RadioGroup
+            android:id="@+id/rg_register_select"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rbtn_register_sms"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:button="@null"
+                android:background="@drawable/rbtn_selector_getauthsms"
+                android:text="文字短信"
+                android:textColor="@color/rbtn_select_getauthtextcolor"
+                android:checked="true" />
+            <RadioButton
+                android:id="@+id/rbtn_register_phone"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:button="@null"
+                android:background="@drawable/rbtn_select_getauthphone"
+                android:text="电话回拨语音播报"
+                android:textColor="@color/rbtn_select_getauthtextcolor"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="如果您无法收到短信，可以选择语音播报验证码。"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/icon_lock3x"/>
+
+            <EditText
+                android:id="@+id/et_register_authcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_shape"
+                android:hint="验证码"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:onClick="onClick"
+        android:background="#000000"
+        android:id="@+id/btn_register_next1" />
+
+
+
+</LinearLayout>
